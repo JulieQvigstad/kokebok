@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +23,15 @@ header {
     z-index: 20;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#B8E1FF ;
+    padding: 15px;
+    width: 100%;
+}
+
 #header-slutt {
     display: flex;
     align-items: center;
@@ -34,6 +46,7 @@ header {
 
 h1{
    text-align: center;
+   font-family: "Noto Sans", sans-serif;
 }
 
 .poppis{
@@ -53,4 +66,12 @@ div > img, p{
     height: 100px;
     border-radius: 50%;
     text-align: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
 }

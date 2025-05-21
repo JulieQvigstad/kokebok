@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Logg innn - AA </title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Header */
+
+
+        .gray {
+            filter: grayscale(100%);
+        }
+
+        nav {
+            display: flex;
+            background-color: var(--lysgronn);
+            height: 100%;
+            align-items: center;
+            padding: 15px;
+            width: 100vw;
+        }
+
+        .left {
+            display: flex;
+
+            gap: 20px;
+            align-items: center;
+        }
+
+        .right {
+            display: flex;
+            margin-left: 20px;
+            gap: 20px;
+            justify-content: space-around;
+
+            flex: 1;
+            align-items: center;
+
+        }
+
+        #searchInput {
+            margin: 0px;
+        }
+
+        input {
+            width: 60%;
+            padding: 10px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .logo {
+            height: 19vh;
+            flex: 1;
+
+        }
+
+        header {
+            height: 20vh;
+        }
+
+        .navitem {
+            padding: 10px;
+            display: flex;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .navitem:hover,
+        .login:hover,
+        #login:hover {
+            background-color: var(--gronn);
+            color: white;
+            border-radius: 5px;
+        }
+
+
+        .login {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #dropBtn {
+            display: none;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 60px;
+            background: var(--lysgragronn);
+            max-height: 200px;
+            overflow-y: auto;
+            width: 331px;
+            z-index: 99;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            color: var(--morkgronn);
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        .dropdown a:hover {
+            background-color: var(--gronn);
+            color: white;
+            border-radius: 3px;
+        }
+
+        /* Header end */
+
+        main {
+            display: flex;
+            align-items: center;
+            height: 80vh;
+        }
+
+        body {
+            font-family: "Raleway", sans-serif;
+            color: var(--morkgronn);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 60px;
+        }
+
+        article {
+            width: 700px;
+            padding: 50px;
+            border-radius: 10px;
+            border: 1px solid var(--gronn);
+        }
+
+        button {
+            background-color: var(--rosa);
+            padding: 10px;
+            border: 1px solid var(--gronn);
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--gronn);
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid var(--gronn);
+            border-radius: 5px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        /* Darkmode classes */
+        .greenGrey {
+            color: var(--hvitgragronn);
+        }
+
+        .greyGreen {
+            color: var(--gragronn);
+        }
+
+        .darkGB {
+            background-color: var(--morkgronn);
+        }
+
+        .darkB {
+            background-color: rgb(20, 20, 20);
+            color: var(--gragronn);
+        }
+
+        .whiteC {
+            color: white;
+        }
+
+        .darkIN {
+            background-color: var(--gragronn);
+        }
+
+
+        .darkTA {
+            background-color: var(--gronn);
+        }
+
+        .darkB .ip {
+            background-color: var(--gragronn);
+
+        }
+
+        .darkB button {
+            background-color: var(--morkgronn);
+        }
+
+        /* Darkmode classes end */
+
+
+
+        @media(max-width: 750px) {
+            article {
+                padding: 20px;
+                width: 100%;
+                margin-top: 100px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            input {
+                margin-bottom: 10px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .right {
+                display: none;
+            }
+
+            header img {
+                width: auto;
+                margin-left: 50%;
+            }
+
+            .login {
+                display: none;
+            }
+
+            .navitem {
+                display: none;
+            }
+
+            nav.right {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="header-start">
+                <a href="index.html"><img src="logo/logo-tekst.svg" alt id="logoImg"></a>
+            </div>
+            <a class="login" href="signInn.html">
+                <i class="fa-solid fa-user" id="user"></i>
+                Logg inn
+            </a>
+            <a href="#home">Oppskrifter</a>
+            <a href="#news">Høytider</a>
+            <div id="header-slutt">
+                <div id="search">
+                    <i class="fa-solid fa-magnifying-glass"> </i>
+                    <input type="text" id="search-bar" placeholder="Søk">
+                </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <article>
+            <h2>Logg inn:</h2>
+            <form action="takk2.html" method="get">
+                <div>
+                    <label for="username">Brukernavn:</label>
+                    <input type="text" class="ip" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Passord:</label>
+                    <input type="password" class="ip" name="password" required>
+                </div>
+                <button type="submit">Logg inn</button>
+            </form>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
