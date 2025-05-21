@@ -45,7 +45,6 @@ h1{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
 }
 
 div > img, p{
