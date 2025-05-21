@@ -14,7 +14,7 @@ header {
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: #B8E1FF;
+    background-color: #fdecc7;
     align-items: center;
     justify-content: space-between;
     position: sticky;
@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#B8E1FF ;
+    background-color:#fdecc7 ;
     padding: 15px;
     width: 100%;
 }
