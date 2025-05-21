@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color:  #faf8f5;
+}
 header {
     display: flex;
     width: 100%;
@@ -34,6 +37,20 @@ h1{
 }
 
 .poppis{
-    background-color: #faf8f5;
+    margin-top: 20px;
+}
 
+.poppis_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+div > img, p{
+    width: 140px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
 }
