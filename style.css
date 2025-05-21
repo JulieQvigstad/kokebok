@@ -59,6 +59,7 @@ h1{
 }
 
 .poppis_img{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
