@@ -10,13 +10,30 @@
     <style>
 
         .middag {
-            height: 400px;
-            background-image: url(bilder/bakgrunn.jpeg);
+            position: relative;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            color: white;
+            z-index: 2;
         }
 
-        .middag > img {
-            width: fit-content;
+
+        .middag video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.6;
         }
+
 
         main {
             display: flex;
@@ -25,7 +42,7 @@
         }
 
         h1 {
-            font-size: 55px;
+            font-size: 70px;
         }
         section {
             border: 1px solid black;
@@ -65,6 +82,7 @@
 
     <main>
         <div class="middag">
+            <video src="video/middag.mp4" muted loop autoplay></video>
             <h1>Middagstips</h1>
         </div>
 
