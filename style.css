@@ -44,6 +44,10 @@ nav {
     width: 40%;
 }
 
+#search-bar {
+    padding: 10px;
+}
+
 #header-start {
     padding-left: 15px;
     width: fit-content;
