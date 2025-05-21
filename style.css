@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #B8E1FF;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+
+#header-slutt {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+#header-start {
+    padding-left: 15px;
+    width: fit-content;
+}
+
+h1{
+   text-align: center;
+}
+
+.poppis{
+    background-color: #faf8f5;
+
+}
