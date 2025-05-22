@@ -1,6 +1,7 @@
 const knapp = document.getElementById("knapp");
 const bildeboks = document.getElementById("tilf_bilder");
 const recipe = document.querySelector(".recipe")
+const pil = document.querySelector(".toggle-knapp")
 
 const bilder = [
   "bilder/frokost.jpg",
@@ -18,19 +19,25 @@ function visBilde() {
   bildeboks.innerHTML = '<img src="' + valgtBilde + '" alt="Middagsforslag">';
 }
 
-knapp.addEventListener("click", visBilde);
+document.addEventListener("click", visBilde);
 
 //Oppskrift
+
 document.addEventListener("DOMContentLoaded", function () {
-  const box = document.querySelector(".recipe");
-  const button = document.querySelector(".toggle-knapp");
+  const buttons = document.querySelectorAll(".toggle-knapp");
 
-  button.addEventListener("click", function () {
-      box.classList.toggle("utvid");
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      const recipeBox = this.closest(".recipe");
+      recipeBox.classList.toggle("utvid");
 
-      button.style.transform = box.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
+      // Endre pilens rotasjon
+      this.style.transform = recipeBox.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
+      this.textContent = recipeBox.classList.contains("utvid") ? "▲" : "▼";
+    });
   });
 });
 
 
-  
+
+
