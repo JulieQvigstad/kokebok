@@ -8,91 +8,139 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
 </head>
-    <style>
-
-        .middag {
-            position: relative;
-            right: 0;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #111;
-            color: white;
-            z-index: 2;
-        }
-
-
-        .middag video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            opacity: 0.6;
-        }
+<style>
+    .middag {
+        position: relative;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #111;
+        color: white;
+        z-index: 2;
+    }
 
 
-        main {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+    .middag video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.6;
+    }
 
-        h1 {
-            font-size: 70px;
-        }
-        section {
-            border: 1px solid black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 700px;
-            gap: 20px;
-        }
 
-        section > h2 {
-            margin-top: 20px;
-            font-size: 45px;
-        }
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-        p {
-            font-size: 25px;
-        }
+    h1 {
+        font-size: 70px;
+    }
 
-        .rask {
-            display: flex;
-            flex-direction: column;
-        }
+    section {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+        gap: 20px;
+    }
 
-        .enkel {
-            display: flex;
-        }
+    section>h2 {
+        margin-top: 20px;
+        font-size: 45px;
+    }
 
-        .enkel > article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 5px;
-        }
+    p {
+        font-size: 25px;
+    }
 
-        .enkel > article > img {
-            width: 300px;
-            height: 200px;
-            margin-left: 15px;
-        }
-    </style>
+    .rask {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enkel {
+        display: flex;
+    }
+
+    .enkel>article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .enkel>article>img {
+        width: 300px;
+        height: 200px;
+        margin-left: 15px;
+    }
+
+    .recipe {
+        width: 300px;
+        background-color: rgb(165, 245, 165);
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        max-height: 60px;
+    }
+
+    .recipe h4 {
+    margin: 0;
+}
+
+.recipe p {
+    margin-top: 10px;
+    display: none;
+}
+
+    .toggle-knapp {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #555;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .recipe.utvid {
+        max-height: 450px;
+    }
+
+    .recipe.utvid p {
+        display: block;
+    }
+
+    .recipe.utvid .toggle-knapp {
+        content: "▲";
+        transform: rotate(180deg);
+    }
+</style>
 
 <body>
 
     <header>
         <nav>
             <a href="index.html">
-               <i class="fa-solid fa-house"></i>
-               Hjem
+                <i class="fa-solid fa-house"></i>
+                Hjem
             </a>
 
             <a class="login" href="signInn.html">
@@ -125,12 +173,14 @@
 
         <section class="rask">
             <h2>Rask hverdagsmiddag</h2>
-            <p>Hva kan du lage kjapt etter en lang dag på jobben i en travel uke? Her er 4 forslag til hva du kan lage!</p>
+            <p>Hva kan du lage kjapt etter en lang dag på jobben i en travel uke? Her er 4 forslag til hva du kan lage!
+            </p>
             <div class="enkel">
                 <article>
                     <h3>Kremet pasta med laks</h3>
                     <img src="bilder/laks.webp" alt="">
                     <div class="recipe">
+                        <h4>Oppskrift</h4>
                         <p>Ingredienser:
 
                             300 g pasta (f.eks. penne)
@@ -139,7 +189,7 @@
                             2 håndfuller fersk spinat
                             1 fedd hvitløk, finhakket
                             Salt, pepper og sitronsaft
-                            
+
                             Slik gjør du:
                             Kok pastaen som anvist.
                             Stek hvitløken i litt olje, ha i laks og stek i 2-3 min.
@@ -171,7 +221,7 @@
         <section>
             <h2>Helgekos</h2>
         </section>
-    
+
 
     </main>
 
