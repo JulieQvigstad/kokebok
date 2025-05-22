@@ -60,11 +60,11 @@ h1{
 
 .poppis{
     margin-top: 20px;
-    height: 400px;
+    height: 300px;
 }
 
 .poppis_img{
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -106,6 +106,7 @@ h1{
 
 .rulett_p > p {
     width: 320px;
+    margin-left: 40px;
 }
 
 .generator{
@@ -132,5 +133,33 @@ h1{
     margin: auto;
     background-color: pink;
     border: pink;
+}
+
+footer{
+    text-align: center;
+    width: 864px;
+    margin: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 288px);
+    gap: 10px;
+}
+
+.grid > div{
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+footer > h1{
+    font-size: 30px;
+    padding: 17px;
+}
+
+#tilf_bilder > img{
+    height: 300px;
+    width: 327px;
+    border-radius: 29px;
 }
 
