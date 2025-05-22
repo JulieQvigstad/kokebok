@@ -56,6 +56,7 @@ nav {
 h1{
    text-align: center;
    font-family: "Noto Sans", sans-serif;
+   font-size: 27px;
 }
 
 .poppis{
@@ -105,8 +106,9 @@ h1{
 }
 
 .rulett_p > p {
-    width: 320px;
+    width: 366px;
     margin-left: 40px;
+    font-size: 21px;
 }
 
 .generator{
@@ -120,7 +122,6 @@ h1{
 .generator > div {
     height: 300px;
     width: 327px;
-    border: 2px solid black;
     border-radius: 29px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -133,6 +134,7 @@ h1{
     margin: auto;
     background-color: pink;
     border: pink;
+    font-size: 20px;
 }
 
 footer{
