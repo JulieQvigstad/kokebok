@@ -60,6 +60,7 @@ h1{
 
 .poppis{
     margin-top: 20px;
+    height: 400px;
 }
 
 .poppis_img{
@@ -71,7 +72,7 @@ h1{
     flex-wrap: wrap;
 }
 
-div > img, p{
+.sirkel_img > img, p{
     width: 140px;
     height: 100px;
     border-radius: 50%;
@@ -85,3 +86,31 @@ div > img, p{
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
+
+.rulett{
+    background-color: bisque;
+    height: 450px;
+    padding: 20px;
+}
+
+.rulett_p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rulett_p > div{
+    height: 300px;
+    width: 327px;
+    border: 2px solid black;
+    margin-left: 100px;
+    border-radius: 29px;
+    margin-top: 47px;
+}
+
+.generator{
+    display: flex;
+    flex-direction: column;
+}
+

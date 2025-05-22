@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
-    <title>Kokebok</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        <script src="https://kit.fontawesome.com/59a3ebea89.js"
+            crossorigin="anonymous"></script>
+        <title>Kokebok</title>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <div id="header-start">
-                <a href="index.html"><img src="logo/logo-tekst.svg" alt id="logoImg"></a>
-            </div>
-            <a class="login" href="signInn.html">
-                <i class="fa-solid fa-user" id="user"></i>
-                Logg inn
-            </a>
-            <a href="#home">Oppskrifter</a>
-            <a href="#news">Høytider</a>
-            
-            <div id="header-slutt">
-                <div id="search">
-                    <i class="fa-solid fa-magnifying-glass"> </i>
-                    <input type="text" id="search-bar" placeholder="Søk">
+    <body>
+        <header>
+            <nav>
+                <a href="#home">Hjem</a>
+                <a class="login" href="signInn.html">
+                    <i class="fa-solid fa-user" id="user"></i>
+                    Logg inn
+                </a>
+                <a href="#home">Oppskrifter</a>
+                <a href="#news">Høytider</a>
+
+                <div id="header-slutt">
+                    <div id="search">
+                        <i class="fa-solid fa-magnifying-glass"> </i>
+                        <input type="text" id="search-bar" placeholder="Søk">
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <section class="poppis">
-            <h1>Populære kategorier</h1>
-            <div class="poppis_img">
-                <div>
-                    <img src="bilder/frokost.jpg" alt>
-                    <p>Frokost</p>
+        <main>
+            <section class="poppis">
+                <h1>Populære kategorier</h1>
+                <div class="poppis_img">
+                    <div class="sirkel_img">
+                        <img src="bilder/frokost.jpg" alt>
+                        <p>Frokost</p>
+                    </div>
+
+                    <div class="sirkel_img">
+                        <img src="bilder/lunsj.avif" alt>
+                        <p>Lunsj</p>
+                    </div>
+
+                    <div class="sirkel_img">
+                        <img src="bilder/middag.jpeg" alt>
+                        <p>Middag</p>
+                    </div>
+
+                    <div class="sirkel_img">
+                        <img src="bilder/dessert.jpg" alt>
+                        <p>Dessert</p>
+                    </div>
+
+                    <div class="sirkel_img">
+                        <img src="bilder/vegetar.avif" alt>
+                        <p>Vegtarmat</p>
+                    </div>
+
+                    <div class="sirkel_img">
+                        <img src="bilder/bakst.jpg" alt>
+                        <p>Bakst</p>
+                    </div>
                 </div>
+            </section>
 
-                <div>
-                    <img src="bilder/lunsj.avif" alt>
-                    <p>Lunsj</p>
-                </div>
+            <section class="rulett">
+                <h1>Vanskelig å bestemme seg for middagsrett?</h1>
+                <article class="rulett_p">
+                    <p>Noen ganger er det umulig å bestemme seg. Alt frister
+                        litt, men ingenting frister helt.
+                        Du stirrer tomt inn i kjøleskapet, håper på et tegn –
+                        men nei. Da er det på tide å overlate
+                        valget til noen andre. Prøv middagsruletten – og la
+                        tilfeldighetene bestemme for deg!</p>
 
-                <div>
-                    <img src="bilder/middag.jpeg" alt>
-                    <p>Middag</p>
-                </div>
+                    <div class="generator">
+                        <div>
 
-                <div>
-                    <img src="bilder/dessert.jpg" alt>
-                    <p>Dessert</p>
-                </div>
+                        </div>
 
-                <div>
-                    <img src="bilder/vegetar.avif" alt>
-                    <p>Vegtarmat</p>
-                </div>
+                        <button>Overrask meg!</button>
+                    </div>
+                </article>
+            </section>
 
-                <div>
-                    <img src="bilder/bakst.jpg" alt>
-                    <p>Bakst</p>
-                </div>
-            </div>
-        </section>
-    </main>
+        </main>
 
-</body>
+    </body>
 
 </html>
