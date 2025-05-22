@@ -98,10 +98,18 @@
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
         max-height: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     .recipe h4 {
         margin: 0;
+        font-size: 30px;
+    }
+
+    .recipe h5 {
+        font-size: 25px;
     }
 
     .recipe p {
@@ -127,6 +135,7 @@
 
     .recipe.utvid p {
         display: block;
+        font-size: 20px;
     }
 
     .recipe.utvid .toggle-knapp {
@@ -182,21 +191,24 @@
                     <img src="bilder/laks.webp" alt="">
                     <div class="recipe">
                         <h4>Oppskrift</h4>
-                        <p>Ingredienser:
+                        <h5>Ingredienser:</h5>
+                        <div>
+                            <p>300 g pasta (f.eks. penne)</p>
+                            <p>200 g fersk eller røkt laks (i biter)</p>
+                            <p>1 dl kremfløte</p>
+                            <p>2 håndfuller fersk spinat</p>
+                            <p>1 fedd hvitløk, finhakket</p>
+                            <p>Salt, pepper og sitronsaft</p>
+                        </div>
 
-                            300 g pasta (f.eks. penne)
-                            200 g fersk eller røkt laks (i biter)
-                            1 dl kremfløte
-                            2 håndfuller fersk spinat
-                            1 fedd hvitløk, finhakket
-                            Salt, pepper og sitronsaft
-
-                            Slik gjør du:
-                            Kok pastaen som anvist.
-                            Stek hvitløken i litt olje, ha i laks og stek i 2-3 min.
-                            Tilsett fløte og spinat, og la det småkoke i noen minutter.
-                            Bland inn pastaen og smak til med salt, pepper og litt sitron.
-                        </p>
+                        <div>
+                            <h5>Slik gjør du:</h5>
+                            <p>Kok pastaen som anvist.
+                                Stek hvitløken i litt olje, ha i laks og stek i 2-3 min.
+                                Tilsett fløte og spinat, og la det småkoke i noen minutter.
+                                Bland inn pastaen og smak til med salt, pepper og litt sitron.
+                            </p>
+                        </div>
                         <button class="toggle-knapp">▼</button>
                     </div>
                 </article>
