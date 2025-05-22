@@ -72,7 +72,8 @@ h1{
     flex-wrap: wrap;
 }
 
-.sirkel_img > img, p{
+.sirkel_img > img, 
+.sirkel_img > p{
     width: 140px;
     height: 100px;
     border-radius: 50%;
@@ -89,7 +90,7 @@ h1{
 
 .rulett{
     background-color: bisque;
-    height: 450px;
+    height: 500px;
     padding: 20px;
 }
 
@@ -98,19 +99,38 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 19px;
+    width: 900px;
+    margin: auto;
 }
 
-.rulett_p > div{
-    height: 300px;
-    width: 327px;
-    border: 2px solid black;
-    margin-left: 100px;
-    border-radius: 29px;
-    margin-top: 47px;
+.rulett_p > p {
+    width: 320px;
 }
 
 .generator{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.generator > div {
+    height: 300px;
+    width: 327px;
+    border: 2px solid black;
+    border-radius: 29px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.generator > button{
+    width: 189px;
+    height: 27px;
+    margin: auto;
+    background-color: pink;
+    border: pink;
 }
 
