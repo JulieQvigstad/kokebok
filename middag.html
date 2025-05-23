@@ -88,6 +88,18 @@
         margin-left: 15px;
     }
 
+    /*Likte oppskrifter*/
+    .liked {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+    .liked i {
+        color: pink;
+    }
+
+
 
     .recipe {
         width: 300px;
@@ -162,7 +174,7 @@
             </a>
             <a href="oppskrift.html">
                 <i class="fa-solid fa-receipt"></i>
-                Oppskrifter</a>
+                Likte Oppskrifter</a>
 
             <a href="hoytider.html">
                 <i class="fa-solid fa-champagne-glasses"></i>
@@ -190,7 +202,10 @@
             </p>
             <div class="enkel">
                 <article>
-                    <h3>Kremet pasta med laks</h3>
+                    <div class="liked">
+                        <h3>Kremet pasta med laks</h3>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
                     <img src="bilder/laks.webp" alt="">
                     <div class="recipe">
                         <h4>Oppskrift</h4>
@@ -262,7 +277,8 @@
                             <p>Forvarm ovnen til 220°C (over- og undervarme).
                                 Vask potetene godt, og prikk dem med en gaffel.
                                 Gni potetene inn med litt olje og salt.
-                                Legg dem rett på risten i ovnen, og bak i ca. 1–1,5 time, til de er myke inni og skallet er sprøtt.
+                                Legg dem rett på risten i ovnen, og bak i ca. 1–1,5 time, til de er myke inni og skallet
+                                er sprøtt.
                                 Ta dem ut, lag et kryss i toppen med kniv, og klem forsiktig på sidene så de åpner seg.
                                 Fyll med ønsket tilbehør – f.eks. smør først, så ost, skinke, mais og rømme.
                             </p>
@@ -289,11 +305,13 @@
                         <div>
                             <h5>Slik gjør du:</h5>
                             <p>Kutt kyllingen i strimler eller terninger.
-                                Varm olje i en stor panne eller wokpanne. Stek kyllingen på høy varme til den er gyllen og gjennomstekt (ca. 5–7 min).
+                                Varm olje i en stor panne eller wokpanne. Stek kyllingen på høy varme til den er gyllen
+                                og gjennomstekt (ca. 5–7 min).
                                 Tilsett hvitløk og ingefær om du bruker det, og la det surre i 1 minutt.
-                                Ha i wokgrønnsakene, og stek videre i 5–7 minutter til de er gjennomvarme, men fortsatt sprø.
+                                Ha i wokgrønnsakene, og stek videre i 5–7 minutter til de er gjennomvarme, men fortsatt
+                                sprø.
                                 Hell over soyasaus, og smak til med salt og pepper. Rør godt rundt.
-                                Server med kokt ris eller nudler. 
+                                Server med kokt ris eller nudler.
                             </p>
                         </div>
                         <button class="toggle-knapp">▼</button>
