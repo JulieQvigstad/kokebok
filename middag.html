@@ -99,7 +99,7 @@
         left: 50%;
         transform: translateX(-50%);
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
+        transition: max-height 0.7s ease-in-out;
         max-height: 60px;
         display: flex;
         flex-direction: column;
@@ -116,8 +116,8 @@
     }
 
     .recipe p {
+        font-size: 20px;
         margin-top: 10px;
-        display: none;
     }
 
     .toggle-knapp {
@@ -133,12 +133,12 @@
     }
 
     .recipe.utvid {
-        max-height: 850px;
+        max-height: 1000px;
     }
 
-    .recipe.utvid p {
-        display: block;
-        font-size: 20px;
+    .recipe .toggle-knapp {
+        content: "▲";
+        transform: rotate(0);
     }
 
     .recipe.utvid .toggle-knapp {

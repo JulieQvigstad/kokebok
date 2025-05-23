@@ -16,7 +16,7 @@ function visBilde() {
   const tilfeldigIndex = Math.floor(tilfeldigTall * antallBilder);
   const valgtBilde = bilder[tilfeldigIndex];
 
-  bildeboks.innerHTML = '<img src="' + valgtBilde + '" alt="Middagsforslag">';
+  // Funker ikke? bildeboks.innerHTML = '<img src="' + valgtBilde + '" alt="Middagsforslag">';
 }
 
 document.addEventListener("click", visBilde);
@@ -30,10 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       const recipeBox = this.closest(".recipe");
       recipeBox.classList.toggle("utvid");
-
-      // Endre pilens rotasjon
-      this.style.transform = recipeBox.classList.contains("utvid") ? "rotate(180deg)" : "rotate(0deg)";
-      this.textContent = recipeBox.classList.contains("utvid") ? "▲" : "▼";
     });
   });
 });
