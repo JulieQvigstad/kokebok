@@ -2,7 +2,7 @@ const knapp = document.getElementById("knapp");
 const bildeboks = document.getElementById("tilf_bilder");
 const recipe = document.querySelector(".recipe")
 const pil = document.querySelector(".toggle-knapp")
-const likt = document.querySelector(".liked")
+const liktElms = document.querySelectorAll(".fa-heart")
 
 const bilder = [
   "bilder/frokost.jpg",
@@ -36,8 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Likte oppskrifter
+liktElms.forEach(heart => {
+  heart.addEventListener("click", skiftFarge)
+});
 
-
-
+function skiftFarge(event) {
+  console.log(event)
+  event.target.classList.toggle("nyfarge");
+}
 
 

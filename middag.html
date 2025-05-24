@@ -95,11 +95,13 @@
         align-items: center;
     }
 
-    .liked i {
+    .liked .fa-heart {
         color: pink;
     }
 
-
+    .liked .fa-heart.nyfarge {
+        color: purple;
+    }
 
     .recipe {
         width: 300px;
@@ -231,7 +233,10 @@
                     </div>
                 </article>
                 <article>
-                    <h3>Kylling med ris og grønnsaker</h3>
+                    <div class="liked">
+                        <h3>Kylling med ris og grønnsaker</h3>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
                     <img src="bilder/kylling.avif" alt="">
                     <div class="recipe">
                         <h4>Oppskrift</h4>
