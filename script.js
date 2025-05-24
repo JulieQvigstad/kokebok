@@ -4,6 +4,7 @@ const recipe = document.querySelector(".recipe")
 const pil = document.querySelector(".toggle-knapp")
 const liktElms = document.querySelectorAll(".fa-heart")
 
+
 const bilder = [
   "bilder/frokost.jpg",
   "bilder/lunsj.avif",
@@ -35,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Likte oppskrifter
+//Likte oppskrifter - farge på hjertet
 liktElms.forEach(heart => {
   heart.addEventListener("click", skiftFarge)
 });
@@ -45,4 +46,9 @@ function skiftFarge(event) {
   event.target.classList.toggle("nyfarge");
 }
 
+//Likte oppskrifter - local storage
+const article = heart.closest('article');
+const title = article.dataset.title;
+const imgSrc = article.dataset.img;
 
+let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
