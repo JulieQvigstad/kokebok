@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
     <title>Likte Oppskrifter</title>
 </head>
+    <style>
+        section {
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 50px;
+            background: linear-gradient(to right, red, hotpink,  purple);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
 <body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+               <i class="fa-solid fa-house"></i>
+               Hjem
+            </a>
+
+            <a class="login" href="signInn.html">
+                <i class="fa-solid fa-user" id="user"></i>
+                Logg inn
+            </a>
+            <a href="oppskrift.html">
+                <i class="fa-solid fa-receipt"></i>
+               Likte Oppskrifter</a>
+
+            <a href="hoytider.html">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                Høytider</a>
+
+            <div id="header-slutt">
+                <div id="search">
+                    <i class="fa-solid fa-magnifying-glass"> </i>
+                    <input type="text" id="search-bar" placeholder="Hva vil du lage idag?">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Dine Likte Oppskrifter</h1>
+    </section>
     
+
+    <script src="script.js"></script>
 </body>
 </html>
