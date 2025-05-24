@@ -52,3 +52,14 @@ const title = article.dataset.title;
 const imgSrc = article.dataset.img;
 
 let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
+
+if (heart.classList.contains('nyfarge')) {
+  // Legg til i likte oppskrifter
+  likedRecipes.push({ title, imgSrc });
+} else {
+  // Fjern hvis fjernet
+  likedRecipes = likedRecipes.filter(recipe => recipe.title !== title);
+}
+
+localStorage.setItem('likedRecipes', JSON.stringify(likedRecipes));
+

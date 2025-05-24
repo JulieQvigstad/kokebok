@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,34 @@
     <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
     <title>Likte Oppskrifter</title>
 </head>
-    <style>
-        section {
-            margin-top: 40px;
-        }
+<style>
+    section {
+        margin-top: 40px;
+    }
 
-        h1 {
-            font-size: 50px;
-            background: linear-gradient(to right, red, hotpink,  purple);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-        }
-    </style>
+    h1 {
+        font-size: 50px;
+        background: linear-gradient(to right, red, hotpink, purple);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .liked-recipe {
+        margin-bottom: 20px;
+    }
+
+    .liked-recipe img {
+        width: 200px;
+    }
+</style>
+
 <body>
 
     <header>
         <nav>
             <a href="index.html">
-               <i class="fa-solid fa-house"></i>
-               Hjem
+                <i class="fa-solid fa-house"></i>
+                Hjem
             </a>
 
             <a class="login" href="signInn.html">
@@ -34,7 +44,7 @@
             </a>
             <a href="oppskrift.html">
                 <i class="fa-solid fa-receipt"></i>
-               Likte Oppskrifter</a>
+                Likte Oppskrifter</a>
 
             <a href="hoytider.html">
                 <i class="fa-solid fa-champagne-glasses"></i>
@@ -51,9 +61,26 @@
 
     <section>
         <h1>Dine Likte Oppskrifter</h1>
+
+        <div id="likte-oppskrifter"></div>
     </section>
-    
+
+    <script>
+        const container = document.getElementById('likte-oppskrifter');
+        const likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
+
+        likedRecipes.forEach(recipe => {
+            const div = document.createElement('div');
+            div.className = 'liked-recipe';
+            div.innerHTML = `
+        <h3>${recipe.title}</h3>
+        <img src="${recipe.imgSrc}" alt="${recipe.title}">
+      `;
+            container.appendChild(div);
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
+
 </html>
