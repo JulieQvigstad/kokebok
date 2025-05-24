@@ -43,13 +43,13 @@ liktElms.forEach(heart => {
 
 function skiftFarge(event) {
   console.log(event)
-  event.target.classList.toggle("nyfarge");
-}
+  const heart = event.target;
+  heart.classList.toggle("nyfarge");
 
-//Likte oppskrifter - local storage
-const article = heart.closest('article');
-const title = article.dataset.title;
-const imgSrc = article.dataset.img;
+  //Likte oppskrifter - local storage
+  const article = heart.closest('article');
+  const title = article.dataset.title;
+  const imgSrc = article.dataset.img;
 
 let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 
@@ -63,3 +63,4 @@ if (heart.classList.contains('nyfarge')) {
 
 localStorage.setItem('likedRecipes', JSON.stringify(likedRecipes));
 
+}
