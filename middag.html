@@ -108,6 +108,33 @@
         margin-left: 15px;
     }
 
+    .helg {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .helg .stor {
+        width: 500px;
+        height: 400px;
+        text-align: center;
+        background-color: lightcoral;
+    }
+
+    .kolonne {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .kolonne article {
+        width: 400px;
+        height: 190px;
+        background-color: lightblue;
+    }
+
+
     /*Likte oppskrifter*/
     .liked {
         display: flex;
@@ -120,7 +147,7 @@
     }
 
     .liked .fa-heart.nyfarge {
-        color: hotpink;
+        color: rgb(242, 2, 122);
     }
 
     .recipe {
@@ -179,6 +206,7 @@
         content: "▲";
         transform: rotate(180deg);
     }
+
     /*likte oppskrifter slutt*/
 </style>
 
@@ -385,12 +413,14 @@
 
 
         <section class="weekend">
-            <h2>Helgekos</h2>
-            <p>Det du MÅ lage til helgen!</p>
+            <h2>Helgens nr. 1</h2>
+            <p>Dette du MÅ lage til helgen!</p>
             <div class="helg">
-                <article></article>
-                <article></article>
-                <article></article>
+                <article class="stor">Artikkel 1</article>
+                <div class="kolonne">
+                    <article>Artikkel 2</article>
+                    <article>Artikkel 3</article>
+                </div>
             </div>
         </section>
 
