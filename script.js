@@ -36,45 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Likte oppskrifter - farge på hjertet
-/*
-const savedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
-
-liktElms.forEach(heart => {
-  heart.addEventListener("click", skiftFarge)
-});
-
-function skiftFarge(event) {
-  console.log(event)
-  const heart = event.target;
-  heart.classList.toggle("nyfarge");
-
-  //Likte oppskrifter - local storage
-  const article = heart.closest('article');
-  const title = article.dataset.title;
-  const imgSrc = article.dataset.img;
-
-  if (savedRecipes.find(recipe => recipe.title === title)) {
-    heart.classList.add('nyfarge');
-  }
-
-
-let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
-
-if (heart.classList.contains('nyfarge')) {
-  // Legg til i likte oppskrifter
-  likedRecipes.push({ title, imgSrc });
-} else {
-  // Fjern hvis fjernet
-  likedRecipes = likedRecipes.filter(recipe => recipe.title !== title);
-}
-
-localStorage.setItem('likedRecipes', JSON.stringify(likedRecipes));
-
-}
-*/
-
-// Ved lasting av siden: sett mørk rosa hvis den er likt fra før
+//LIKTE OPPSKRIFTER 
+//Ved lasting av siden: sett mørk rosa hvis den er likt fra før
 const savedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 
 liktElms.forEach(heart => {
@@ -82,24 +45,24 @@ liktElms.forEach(heart => {
   const title = article.dataset.title;
   const imgSrc = article.dataset.img;
 
-  // Hvis oppskriften finnes i localStorage, legg til nyfarge-klassen
+  //Hvis oppskriften finnes i localStorage legg til nyfarge-klassen
   if (savedRecipes.find(recipe => recipe.title === title)) {
     heart.classList.add('nyfarge');
   }
 
-  // Legg til klikk-event
+  //skigter farge 
   heart.addEventListener("click", function () {
     heart.classList.toggle("nyfarge");
 
     let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 
     if (heart.classList.contains('nyfarge')) {
-      // Legg til hvis den ikke er der
+      //Legg til hvis den ikke er der
       if (!likedRecipes.find(recipe => recipe.title === title)) {
         likedRecipes.push({ title, imgSrc });
       }
     } else {
-      // Fjern hvis unliket
+      //Fjern hvis unliket
       likedRecipes = likedRecipes.filter(recipe => recipe.title !== title);
     }
 
