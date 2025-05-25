@@ -88,6 +88,23 @@
         margin-left: 15px;
     }
 
+    .barn {
+        display: flex;
+    }
+
+    .barn>article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .barn>article>img {
+        width: 300px;
+        height: 200px;
+        margin-left: 15px;
+    }
+
     /*Likte oppskrifter*/
     .liked {
         display: flex;
@@ -334,10 +351,35 @@
 
         <section>
             <h2>Barnas favoritter</h2>
-            <p>Her er forslag til hva du kan gjøre for at maten blir litt mer spennende for de små!</p>
+            <p>Her er de rettene som er mest populære blant barna!</p>
+            <div class="barn">
+                <article data-title="Barnepizza" data-img="bilder/miniPizza.webp">
+                    <div class="liked">
+                        <h3>Barnepizza</h3>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="bilder/miniPizza.webp">
+                </article>
+
+                <article data-title="Miniburger" data-img="bilder/barneBurger.webp">
+                    <div class="liked">
+                        <h3>Miniburger</h3>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="bilder/barneBurger.webp">
+                </article>
+
+                <article data-title="Pasta Bolognese" data-img="bilder/pastaB.gif">
+                    <div class="liked">
+                        <h3>Pasta Bolognese</h3>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="bilder/pastaB.gif">
+                </article>
+            </div>
         </section>
 
-       
+
         <section>
             <h2>Helgekos</h2>
         </section>
