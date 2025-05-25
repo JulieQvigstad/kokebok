@@ -38,7 +38,6 @@
     main {
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
 
     h1 {
@@ -86,6 +85,10 @@
         width: 300px;
         height: 200px;
         margin-left: 15px;
+    }
+
+    .children {
+        background-color: rgb(211, 253, 253);
     }
 
     .barn {
@@ -176,6 +179,7 @@
         content: "▲";
         transform: rotate(180deg);
     }
+    /*likte oppskrifter slutt*/
 </style>
 
 <body>
@@ -349,7 +353,7 @@
         </section>
 
 
-        <section>
+        <section class="children">
             <h2>Barnas favoritter</h2>
             <p>Her er de rettene som er mest populære blant barna!</p>
             <div class="barn">
@@ -380,8 +384,14 @@
         </section>
 
 
-        <section>
+        <section class="weekend">
             <h2>Helgekos</h2>
+            <p>Det du MÅ lage til helgen!</p>
+            <div class="helg">
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>
         </section>
 
 
