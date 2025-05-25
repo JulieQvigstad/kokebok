@@ -118,9 +118,22 @@
     .helg .stor {
         width: 500px;
         height: 400px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: lightcoral;
+        gap: 20px;
     }
+
+    .stor h4 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .stor img {
+        width: 450px;
+    }
+
 
     .kolonne {
         display: flex;
@@ -415,11 +428,24 @@
         <section class="weekend">
             <h2>Helgens nr. 1</h2>
             <p>Dette du MÅ lage til helgen!</p>
+
             <div class="helg">
-                <article class="stor">Artikkel 1</article>
+                <article class="stor">
+                    <h4>Hjemmelgaget sushi</h4>
+                    <img src="bilder/sushi.jpg">
+                </article>
+
                 <div class="kolonne">
-                    <article>Artikkel 2</article>
-                    <article>Artikkel 3</article>
+                    <article>
+                        <h4>Mangosalat</h4>
+                        <p>Perfekt tilbehør til sushi</p>
+                        
+                    </article>
+
+                    <article>
+                        <h4>Ponzosaus</h4>
+                        <p>Den beste sausen til sushi</p>
+                    </article>
                 </div>
             </div>
         </section>
