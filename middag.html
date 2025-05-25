@@ -108,25 +108,31 @@
         margin-left: 15px;
     }
 
+    .weekend {
+        background-color: rgb(246, 237, 251);
+    }
+
     .helg {
         display: flex;
-        gap: 20px;
-        align-items: flex-start;
+        gap: 10px;
+        align-items: center;
         margin-top: 20px;
     }
 
     .helg .stor {
         width: 500px;
-        height: 400px;
+        height: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: lightcoral;
+        justify-content: center;
+        background-color: rgb(249, 203, 249);
         gap: 20px;
+        border-radius: 15px;
     }
 
-    .stor h4 {
-        margin-top: 20px;
+    article h4 {
+        margin-top: 10px;
         font-size: 30px;
     }
 
@@ -134,17 +140,24 @@
         width: 450px;
     }
 
-
     .kolonne {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        background-color:rgb(249, 203, 249) ;
+        border-radius: 15px;
     }
 
     .kolonne article {
-        width: 400px;
-        height: 190px;
-        background-color: lightblue;
+        width: 300px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .kolonne img {
+        width: 200px;
     }
 
 
@@ -427,7 +440,7 @@
 
         <section class="weekend">
             <h2>Helgens nr. 1</h2>
-            <p>Dette du MÅ lage til helgen!</p>
+            <p>Dette må du lage til helgen!</p>
 
             <div class="helg">
                 <article class="stor">
@@ -439,12 +452,13 @@
                     <article>
                         <h4>Mangosalat</h4>
                         <p>Perfekt tilbehør til sushi</p>
-                        
+                        <img src="bilder/mango.avif" alt="">
                     </article>
 
                     <article>
                         <h4>Ponzosaus</h4>
                         <p>Den beste sausen til sushi</p>
+                        <img src="bilder/Ponzusaus.webp">
                     </article>
                 </div>
             </div>
