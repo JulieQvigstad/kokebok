@@ -180,15 +180,13 @@ footer > h1{
 }
 
 .start > article {
-    grid-column: span 1;
-    grid-row: span 1;
     position: relative;
     overflow: hidden;
 }
 
 .one {
-    grid-row: span 9;
-    grid-column: span 112;
+    grid-row: 1 / span 9;
+    grid-column: 1 / span 12;
 }
 
 .one img {
@@ -198,26 +196,25 @@ footer > h1{
 }
 
 .two {
-    grid-row: span 3;
-    grid-column: span 4;
+    grid-row: 10 / span 3;
+    grid-column: 5 / span 4;
 }
 
 .three {
-    grid-column: span 3;
+    grid-column: 10 / span 3;
     grid-row: 5 / span 4; 
 }
 
 .four {
-    grid-column: span 3;
+    grid-column: 10 / span 3;
     grid-row: 9 / span 4; 
 }
 
-.two img, .three img, .four img {
+.start article img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
 
 .info>h1{
     width: 100%;
