@@ -180,13 +180,16 @@ footer > h1{
 }
 
 .start > article {
+    grid-column: span 1;
+    grid-row: span 1;
     position: relative;
     overflow: hidden;
+    background-color: lightblue;
 }
 
 .one {
-    grid-row: 1 / span 9;
-    grid-column: 1 / span 12;
+    grid-row: 1/12;
+    grid-column: 1/8;
 }
 
 .one img {
@@ -196,18 +199,18 @@ footer > h1{
 }
 
 .two {
-    grid-row: 10 / span 3;
-    grid-column: 5 / span 4;
+    grid-row: 1/4 ;
+    grid-column: 8/12 ;
 }
 
 .three {
-    grid-column: 10 / span 3;
-    grid-row: 5 / span 4; 
+    grid-column: 8/12;
+    grid-row: 4/8; 
 }
 
 .four {
-    grid-column: 10 / span 3;
-    grid-row: 9 / span 4; 
+    grid-column: 8/12;
+    grid-row: 8/12; 
 }
 
 .start article img {
@@ -226,7 +229,7 @@ footer > h1{
     left: 0;
     min-height: 80px;
     height: 20%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.3);
     width: 100%;
     padding: 20px;
     align-items: center;
