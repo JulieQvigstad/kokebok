@@ -186,3 +186,40 @@ footer > h1{
     overflow: hidden;
 }
 
+.one {
+    grid-row: span 8;
+    grid-column: span 8;
+}
+
+.one img {
+        height: 100%;
+        width: 100%;
+}
+
+.two {
+    grid-row: span 4;
+    grid-column: span 4;
+}
+
+.two img {
+    height: 100%;
+    width: 100%;
+}
+
+.info>h1{
+    width: 100%;
+}
+.info{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 80px;
+    height: 20%;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    gap: 40px;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
