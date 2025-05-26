@@ -167,3 +167,22 @@ footer > h1{
     border-radius: 29px;
 }
 
+/*Start forside*/
+
+.start {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 20px;
+    min-height: 100vh;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.start > article {
+    grid-column: span 1;
+    grid-row: span 1;
+    position: relative;
+    overflow: hidden;
+}
+
