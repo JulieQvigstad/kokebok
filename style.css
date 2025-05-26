@@ -187,24 +187,37 @@ footer > h1{
 }
 
 .one {
-    grid-row: span 8;
-    grid-column: span 8;
+    grid-row: span 9;
+    grid-column: span 112;
 }
 
 .one img {
         height: 100%;
         width: 100%;
+        object-fit: cover;
 }
 
 .two {
-    grid-row: span 4;
+    grid-row: span 3;
     grid-column: span 4;
 }
 
-.two img {
+.three {
+    grid-column: span 3;
+    grid-row: 5 / span 4; 
+}
+
+.four {
+    grid-column: span 3;
+    grid-row: 9 / span 4; 
+}
+
+.two img, .three img, .four img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
+
 
 .info>h1{
     width: 100%;
