@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:  #faf8f5;
+body {
+    background-color: #faf8f5;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -32,7 +33,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(252, 234, 204) ;
+    background-color: rgb(252, 234, 204);
     padding: 15px;
     width: 100%;
 }
@@ -54,18 +55,18 @@ nav {
 }
 
 
-h1{
-   text-align: center;
-   font-family: "Noto Sans", sans-serif;
-   font-size: 27px;
+h1 {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 27px;
 }
 
-.poppis{
+.poppis {
     margin-top: 20px;
     height: 300px;
 }
 
-.poppis_img{
+.poppis_img {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -74,8 +75,8 @@ h1{
     flex-wrap: wrap;
 }
 
-.sirkel_img > img, 
-.sirkel_img > p{
+.sirkel_img>img,
+.sirkel_img>p {
     width: 140px;
     height: 100px;
     border-radius: 50%;
@@ -90,13 +91,13 @@ h1{
     transition: all 0.2s ease-in-out;
 }
 
-.rulett{
+.rulett {
     background-color: bisque;
     height: 500px;
     padding: 20px;
 }
 
-.rulett_p{
+.rulett_p {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -106,13 +107,13 @@ h1{
     margin: auto;
 }
 
-.rulett_p > p {
+.rulett_p>p {
     width: 366px;
     margin-left: 40px;
     font-size: 21px;
 }
 
-.generator{
+.generator {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +121,7 @@ h1{
     margin-top: 20px;
 }
 
-.generator > div {
+.generator>div {
     height: 300px;
     width: 327px;
     border-radius: 29px;
@@ -129,7 +130,7 @@ h1{
     margin-left: 20px;
 }
 
-.generator > button{
+.generator>button {
     width: 189px;
     height: 27px;
     margin: auto;
@@ -139,29 +140,30 @@ h1{
     font-size: 20px;
 }
 
-footer{
+footer {
     text-align: center;
     width: 864px;
     margin: auto;
 }
-.grid{
+
+.grid {
     display: grid;
     grid-template-columns: repeat(3, 288px);
     gap: 10px;
 }
 
-.grid > div{
+.grid>div {
     height: 300px;
     border: 2px solid black;
     padding: 10px;
 }
 
-footer > h1{
+footer>h1 {
     font-size: 30px;
     padding: 17px;
 }
 
-#tilf_bilder > img{
+#tilf_bilder>img {
     height: 300px;
     width: 327px;
     border-radius: 29px;
@@ -170,47 +172,23 @@ footer > h1{
 /*Start forside*/
 
 .start {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12,1fr);
-    gap: 20px;
+    display: flex;
     min-height: 100vh;
-    padding: 30px;
-    border: 1px solid black;
+    padding: 10px;
+
 }
 
-.start > article {
-    grid-column: span 1;
-    grid-row: span 1;
+.start article {
     position: relative;
     overflow: hidden;
-    background-color: lightblue;
 }
 
 .one {
-    grid-row: 1/12;
-    grid-column: 1/8;
-}
-
-.one img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    width: 68%;
 }
 
 .two {
-    grid-row: 1/4 ;
-    grid-column: 8/12 ;
-}
-
-.three {
-    grid-column: 8/12;
-    grid-row: 4/8; 
-}
-
-.four {
-    grid-column: 8/12;
-    grid-row: 8/12; 
+    width: 32%;
 }
 
 .start article img {
@@ -219,17 +197,18 @@ footer > h1{
     object-fit: cover;
 }
 
-.info>h1{
+.info>h1 {
     width: 100%;
 }
-.info{
+
+.info {
     display: flex;
     position: absolute;
     bottom: 0;
     left: 0;
     min-height: 80px;
     height: 20%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     padding: 20px;
     align-items: center;
