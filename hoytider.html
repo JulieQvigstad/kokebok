@@ -5,42 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/59a3ebea89.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/59a3ebea89.js"
+            crossorigin="anonymous"></script>
     </head>
     <style>
         .hoy_grid{
             display: grid;
             grid-template-columns: repeat(3, 300px);
             width: 900px;
-            gap: 4px;
+            gap: 16px;
             margin: auto;
+            margin-top: 30px;
         }
 
         .hoy_grid > div{
-            height: 400px;
+            height: 200px;
             border: black solid 2px;
         }
 
-        .hoy_grid > h1{
-            margin-bottom: 20px;
-        }
-
         .hoytid{
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            border: black solid 2px;
             display: flex;
-            flex-direction: column;
-            gap: 2px;
+            align-items: center;
+           justify-content: center;
         }
 
-        .hoytid > img{
-            width: 100px;
-            height: 100px;
+        .hoytid > h1 {
             margin: auto;
+            background-color: gray;
+            padding: 10px;
+            color: white;
         }
 
-        .hoytid > p {
-            width: 260px;
-            margin: auto;
-            height: 100px;
+        article{
+            height: 200px;
+            border: 2px solid black;
         }
 
     </style>
@@ -68,65 +71,47 @@
                 <div id="header-slutt">
                     <div id="search">
                         <i class="fa-solid fa-magnifying-glass"> </i>
-                        <input type="text" id="search-bar" placeholder="Hva vil du lage idag?">
+                        <input type="text" id="search-bar"
+                            placeholder="Hva vil du lage idag?">
                     </div>
                 </div>
             </nav>
         </header>
 
         <main>
-            <h1>Inspirasjon til høytider</h1>
             <section class="hoy_grid">
-                <div class="hoytid">
+                <div class="hoytid"
+                    style="background-image: url('bilder/påske1.avif')">
                     <h1>Påske</h1>
-                    <p>Påsken er en tid for mye kos med god mat! Her finner du oppskrifter og inspirasjon
-                    til hva du kan servere gjestene under høytiden.</p>
-                    <img src="bilder/påske1.avif" alt="">
-                    <img src="bilder/påske2.avif" alt="">
-                    <img src="bilder/påske3.avif" alt="">
-
                 </div>
-                <div class="hoytid">
-                    <h1>17. mai</h1>
-                    <p>Uansett om du skal bidra med en rett til frokosten eller om du inviterer til middag – 
-                        her finner du inspirasjon og de mest populære oppskriftene til 17.mai.</p>
-                    <img src="bilder/17.mai1" alt="">
-                    <img src="bilder/17.mai2" alt="">
-                    <img src="bilder/17.mai3" alt="">
+                <div class="hoytid"
+                    style="background-image: url('bilder/17.mai1')">
+                    <h1>17.mai</h1>
                 </div>
-                <div class="hoytid">
+                <div class="hoytid"
+                    style="background-image: url('bilder/sommer1')">
                     <h1>Sommerfest</h1>
-                    <p>Koser du deg med maten i sommer? Det har du all grunn til, bare se på all denne deilige 
-                        sommermaten.</p>
-                    <img src="bilder/sommer1" alt="">
-                    <img src="bilder/sommer2.avif" alt="">
-                    <img src="bilder/sommer3.webp" alt="">
                 </div>
-                <div class="hoytid">
+                <div class="hoytid"
+                    style="background-image: url('bilder/halloween1.jpg')">
                     <h1>Halloween</h1>
-                    <p>Halloween, eller allehelgensaften som det også kalles på norsk, feires over hele verden
-                        og gjerne med mat og godterier. Her finner du oppskrifter til halloween.</p>
-                        <img src="bilder/halloween1.jpg" alt="">
-                        <img src="bilder/halloween2.webp" alt="">
-                        <img src="bilder/halloween3.jpg" alt="">
                 </div>
-                <div class="hoytid">
-                    <h1>Juletider</h1>
-                    <p>Fyll huset med den stemningsfulle duften av julemat. Vi har samlet oppskrifter og 
-                        inspirasjon som setter julestemningen og fikser julekosen.</p>
-                        <img src="bilder/julemat1.avif" alt="">
-                        <img src="bilder/julemat2.avif" alt="">
-                        <img src="bilder/julemat1.avif" alt="">
+                <div class="hoytid"
+                    style="background-image: url('bilder/julemat1.avif')">
+                    <h1>Julaften</h1>
                 </div>
-                <div class="hoytid">
-                    <h1>Nyttårs</h1>
-                    <p>Ser du etter oppskrifter på nyttårsmat? Her har vi samlet alt fra kalkun, pinnekjøtt 
-                        og and, til karamellpudding og riskremkake.</p>
-                    <img src="bilder/nyttårs1.avif" alt="">
-                    <img src="bilder/nyttårs2.avif" alt="">
-                    <img src="bilder/nyttårs3.avif" alt="">
+                <div class="hoytid"
+                    style="background-image: url('bilder/nyttårs1.avif')">
+                    <h1>Nyttårsaften</h1>
                 </div>
             </section>
+
+            <article>
+
+
+         
+           </article>
         </main>
+
     </body>
 </html>
