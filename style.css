@@ -165,11 +165,7 @@ footer {
     background-color: lemonchiffon;
 }
 
-<<<<<<< Updated upstream
-.grid {
-=======
 .grid{
->>>>>>> Stashed changes
     display: grid;
     grid-template-columns: repeat(3, 288px);
     gap: 10px;
@@ -194,7 +190,6 @@ footer>h1 {
     border-radius: 29px;
 }
 
-<<<<<<< Updated upstream
 /*Start forside*/
 .start {
     display: flex;
