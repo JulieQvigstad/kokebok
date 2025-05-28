@@ -203,6 +203,18 @@ footer>h1 {
     color: white;
 }
 
+.one img {
+    border-radius: 20px 0 0 20px;
+}
+
+.topRight img {
+    border-radius: 0 20px 0 0;
+}
+
+.bottomRight img {
+    border-radius: 0 0 20px 0;
+}
+
 .info {
     display: flex;
     position: absolute;
@@ -210,7 +222,7 @@ footer>h1 {
     left: 0;
     min-height: 80px;
     height: 10%;
-    background-color: rgba(0, 0, 0, 0.2);
+    /*background-color: rgba(0, 0, 0, 0.2);*/
     width: 100%;
     padding: 20px;
    color: pink;
