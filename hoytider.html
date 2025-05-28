@@ -12,10 +12,10 @@
         .hoy_grid{
             display: grid;
             grid-template-columns: repeat(3, 300px);
-            width: 900px;
             gap: 16px;
-            margin: auto;
             margin-top: 30px;
+            justify-content: center;
+            align-items: center;
         }
 
         .hoy_grid > div{
@@ -31,7 +31,7 @@
             border: black solid 2px;
             display: flex;
             align-items: center;
-           justify-content: center;
+            justify-content: center;
         }
 
         .hoytid > h1 {
@@ -52,6 +52,28 @@
             font-size: 18px;
             text-align: center;
             margin-top: 10px;
+            margin-bottom: 35px;
+        }
+
+        .hoytid_img{
+            display: flex;
+            height: 100px;
+            width: 450px;
+            gap: 16px;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 980px) {
+            .hoy_grid{
+                grid-template-columns: repeat(2, 250px);
+            }
+
+        }
+
+        @media screen and (max-width: 530px){
+            .hoy_grid{
+                grid-template-columns: repeat(1, 300px)
+            }
         }
 
     </style>
@@ -89,7 +111,7 @@
         <main>
             <section class="hoy_grid">
                 <div class="hoytid"
-                    style="background-image: url('bilder/påske1.avif')">
+                    style="background-image: url('bilder/påske1.webp')">
                     <h1>Påske</h1>
                 </div>
                 <div class="hoytid"
@@ -116,8 +138,15 @@
 
             <article class="paske">
                 <h1>Påske</h1>
-                <p>Påsken er en tid for mye kos med god mat! Her finner du oppskrifter og inspirasjon
+                <p>Påsken er en tid for mye kos med god mat! Her finner du
+                    oppskrifter og inspirasjon
                     til hva du kan servere gjestene under høytiden.</p>
+                <div class="hoytid_img">
+                    <img src="bilder/påske1.avif" alt>
+                    <img src="bilder/påske2.avif" alt>
+                    <img src="bilder/påske3.avif" alt>
+                </div>
+
             </article>
 
             <article class="paske">
