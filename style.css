@@ -17,6 +17,8 @@ a {
     color: black;
 }
 
+/*Header og navbar*/
+
 header {
     display: flex;
     width: 100%;
@@ -55,6 +57,8 @@ nav {
     width: fit-content;
 }
 
+/*Header og navbar - SLUTT*/
+
 
 h1 {
     text-align: center;
@@ -62,6 +66,7 @@ h1 {
     font-size: 27px;
 }
 
+/*Populære kategorier*/
 .poppis {
     margin-top: 20px;
     height: 300px;
@@ -84,6 +89,13 @@ h1 {
     text-align: center;
 }
 
+#gray:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 1s;
+}
+/*Populære kategorier slut*/
+
 .login {
     display: flex;
     align-items: center;
@@ -91,6 +103,8 @@ h1 {
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
+
+/*Tilfeldig middag*/
 
 .rulett {
     background-color: bisque;
@@ -104,7 +118,6 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 19px;
-    width: 900px;
     margin: auto;
 }
 
@@ -140,11 +153,16 @@ h1 {
     border-radius: 15px;
     font-size: 20px;
 }
+/*Tilfeldig middag - SLUTT*/
 
 footer {
     text-align: center;
-    width: 864px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lemonchiffon;
 }
 
 .grid {
@@ -155,7 +173,9 @@ footer {
 
 .grid>div {
     height: 300px;
-    border: 2px solid black;
+    border: 2px solid rgb(246, 144, 193);
+    background-color: rgb(253, 251, 238);
+    border-radius: 15px;
     padding: 10px;
 }
 
@@ -171,7 +191,6 @@ footer>h1 {
 }
 
 /*Start forside*/
-
 .start {
     display: flex;
     min-height: 100vh;
@@ -203,6 +222,19 @@ footer>h1 {
     color: white;
 }
 
+.one img {
+    border-radius: 20px 0 0 20px;
+}
+
+.topRight img {
+    border-radius: 0 20px 0 0;
+}
+
+.bottomRight img {
+    border-radius: 0 0 20px 0;
+}
+
+/*
 .info {
     display: flex;
     position: absolute;
@@ -216,4 +248,5 @@ footer>h1 {
    color: pink;
     align-items: center;
     transition: height 0.3s ease, background-color 0.3s ease;
-}
+}*/
+/*Start forside - SLUTT*/
