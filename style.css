@@ -165,7 +165,11 @@ footer {
     background-color: lemonchiffon;
 }
 
+<<<<<<< Updated upstream
 .grid {
+=======
+.grid{
+>>>>>>> Stashed changes
     display: grid;
     grid-template-columns: repeat(3, 288px);
     gap: 10px;
@@ -190,6 +194,7 @@ footer>h1 {
     border-radius: 29px;
 }
 
+<<<<<<< Updated upstream
 /*Start forside*/
 .start {
     display: flex;
@@ -250,3 +255,22 @@ footer>h1 {
     transition: height 0.3s ease, background-color 0.3s ease;
 }*/
 /*Start forside - SLUTT*/
+=======
+.hoytid{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hoytid > p {
+    width: 250px;
+    margin: auto;
+}
+
+.hoytid > img{
+    width: 145px;
+    height: 83px;
+    margin: auto;
+}
+>>>>>>> Stashed changes
