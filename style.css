@@ -172,7 +172,7 @@ footer {
 }
 
 .grid>div {
-    height: 300px;
+    height: 200px;
     border: 2px solid rgb(246, 144, 193);
     background-color: rgb(253, 251, 238);
     border-radius: 15px;
