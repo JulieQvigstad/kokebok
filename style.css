@@ -157,8 +157,12 @@ h1 {
 
 footer {
     text-align: center;
-    width: 864px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lemonchiffon;
 }
 
 .grid {
@@ -169,7 +173,9 @@ footer {
 
 .grid>div {
     height: 300px;
-    border: 2px solid black;
+    border: 2px solid rgb(246, 144, 193);
+    background-color: rgb(253, 251, 238);
+    border-radius: 15px;
     padding: 10px;
 }
 
