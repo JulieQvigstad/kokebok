@@ -250,25 +250,3 @@ footer>h1 {
     transition: height 0.3s ease, background-color 0.3s ease;
 }*/
 /*Start forside - SLUTT*/
-<<<<<<< HEAD
-=======
-.hoytid{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.hoytid > p {
-    width: 250px;
-    margin: auto;
-}
-
-.hoytid > img{
-    width: 145px;
-    height: 83px;
-    margin: auto;
-}
->>>>>>> Stashed changes
-=======
->>>>>>> ff5175206794860f9d516fc262010324cdbdd42c
