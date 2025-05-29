@@ -194,30 +194,27 @@ footer>h1 {
 .start {
     display: flex;
     min-height: 100vh;
-    padding: 1rem;
+    padding: 1px;
 
 }
 
 .start article {
     position: relative;
     overflow: hidden;
-    flex: 1;
 }
 
 .one {
-    flex: 2;
+    width: 68%;
 }
 
 .two {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    width: 32%;
 }
 
 .start article img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 4/3;
 }
 
 .info>h1 {
@@ -279,7 +276,7 @@ footer>h1 {
     }
 }
 
-/*liten skjerm: alt under hverandre */
+/*liten skjerm: alt under hverandre*/
 @media (max-width: 600px) {
     .start {
         flex-direction: column;
@@ -291,11 +288,11 @@ footer>h1 {
         flex-direction: column;
     }
 
-    /*.two {
+    .two {
         flex-wrap: nowrap;
     }
 
     .two > article {
         width: 100%;
-    }*/
+    }
 }
