@@ -276,6 +276,23 @@ footer>h1 {
     .one img, .two img {
         border-radius: 0;
     }
+
+
+     /*#header-slutt {
+        display: none;
+    }*/
+
+    /*nav {
+        align-items: center;
+        justify-content: center;
+
+    }*/
+}
+
+@media (max-width: 700px) {
+    .login {
+        display: none;
+    }
 }
 
 /*liten skjerm: alt under hverandre*/
@@ -300,6 +317,17 @@ footer>h1 {
 
     .rulett_p > p{
         display: none;
+    }
+
+    #header-slutt {
+        display: none;
+    }
+
+    nav {
+        font-size: 16px;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
     }
 }
 
