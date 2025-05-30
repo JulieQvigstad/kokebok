@@ -277,18 +277,21 @@ footer>h1 {
         border-radius: 0;
     }
 
-    .login {
-        display: none;
-    }
 
-    .forsvinn, #header-slutt {
+     /*#header-slutt {
         display: none;
-    }
+    }*/
 
-    nav {
+    /*nav {
         align-items: center;
         justify-content: center;
 
+    }*/
+}
+
+@media (max-width: 700px) {
+    .login {
+        display: none;
     }
 }
 
@@ -313,6 +316,10 @@ footer>h1 {
     }
 
     .rulett_p > p{
+        display: none;
+    }
+
+    #header-slutt {
         display: none;
     }
 }
