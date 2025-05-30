@@ -322,6 +322,13 @@ footer>h1 {
     #header-slutt {
         display: none;
     }
+
+    nav {
+        font-size: 16px;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 630px) {
