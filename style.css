@@ -276,6 +276,14 @@ footer>h1 {
     .one img, .two img {
         border-radius: 0;
     }
+
+    .login {
+        display: none;
+    }
+
+    .forsvinn {
+        display: none;
+    }
 }
 
 /*liten skjerm: alt under hverandre*/
