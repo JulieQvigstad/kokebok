@@ -281,8 +281,14 @@ footer>h1 {
         display: none;
     }
 
-    .forsvinn {
+    .forsvinn, #header-slutt {
         display: none;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: center;
+
     }
 }
 
