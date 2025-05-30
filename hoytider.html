@@ -63,16 +63,20 @@
             margin: auto;
         }
 
-        @media screen and (max-width: 980px) {
+        @media (max-width: 980px) {
             .hoy_grid{
                 grid-template-columns: repeat(2, 250px);
             }
 
         }
 
-        @media screen and (max-width: 530px){
+        @media (max-width: 530px){
             .hoy_grid{
                 grid-template-columns: repeat(1, 300px)
+            }
+
+            .hoytid_img{
+                flex-direction: column;
             }
         }
 
