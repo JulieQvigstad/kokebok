@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     background-color: #faf8f5;
 }
@@ -163,16 +167,16 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: lemonchiffon;
+    padding-bottom: 40px;
 }
 
-.grid{
+footer .grid{
     display: grid;
-    grid-template-columns: repeat(3, 288px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.grid>div {
-    height: 200px;
+footer .grid>div {
     border: 2px solid rgb(246, 144, 193);
     background-color: rgb(253, 251, 238);
     border-radius: 15px;
