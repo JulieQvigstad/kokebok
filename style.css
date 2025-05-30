@@ -73,7 +73,6 @@ h1 {
 /*Populære kategorier*/
 .poppis {
     margin-top: 20px;
-    height: 300px;
 }
 
 .poppis_img {
@@ -127,7 +126,6 @@ h1 {
 
 .rulett_p>p {
     width: 366px;
-    margin-left: 40px;
     font-size: 21px;
 }
 
@@ -298,5 +296,15 @@ footer>h1 {
 
     .two > article {
         width: 100%;
+    }
+
+    .rulett_p > p{
+        display: none;
+    }
+}
+
+@media (max-width: 630px) {
+    footer .grid {
+        grid-template-columns: 1fr;
     }
 }
