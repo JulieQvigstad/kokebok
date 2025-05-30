@@ -40,7 +40,7 @@
         flex-direction: column;
     }
 
-    h1 {
+    .middag h1 {
         font-size: 70px;
     }
 
@@ -232,8 +232,68 @@
         content: "▲";
         transform: rotate(180deg);
     }
-
     /*likte oppskrifter slutt*/
+
+    @media(max-width: 1190px) {
+        .enkel {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .enkel article {
+            margin-top: 10px;
+        }
+
+        .rask {
+            padding: 20px;
+        }
+
+        .barn {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .children {
+            padding: 20px;
+        }
+
+    }
+
+    @media(max-width: 900px) {
+        .rask p {
+            font-size: 16px;
+        }
+
+        .barn article {
+            margin-top: 20px;
+        }
+
+        .middag {
+            height: 50vh;
+        }
+
+        .helg {
+            flex-direction: column;
+        }
+
+        .helg .stor {
+            width: auto;
+        }
+
+        .stor img {
+            width: auto;
+        }
+    }
+
+    @media(max-width: 500px) {
+        .middag h1 {
+            font-size: 50px;
+        }
+
+        .children p {
+            font-size: 16px;
+        }
+    }
 </style>
 
 <body>
