@@ -16,11 +16,11 @@
             margin-top: 30px;
             justify-content: center;
             align-items: center;
+            margin-bottom: 20px;
         }
 
         .hoy_grid > div{
             height: 200px;
-            border: black solid 2px;
         }
 
         .hoytid{
@@ -34,7 +34,7 @@
             justify-content: center;
         }
 
-        .hoytid > h1 {
+        .hoytid h1 {
             margin: auto;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
@@ -43,9 +43,9 @@
 
         article{
             min-height: 300px;
-            border: 2px solid black;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
         article > p{
@@ -57,10 +57,15 @@
 
         .hoytid_img{
             display: flex;
-            height: 100px;
-            width: 450px;
+            justify-content: space-between;
+            height: 123px;
+            width: 544px;
             gap: 16px;
             margin: auto;
+        }
+
+        .hoytid_img > img {
+            width: 30%;
         }
 
         @media (max-width: 980px) {
@@ -83,6 +88,10 @@
                 flex-direction: column;
                 height: auto;
                 width: 200px;
+            }
+
+            .hoytid_img > img {
+                width: 100%;
             }
         }
 
@@ -122,11 +131,15 @@
             <section class="hoy_grid">
                 <div class="hoytid"
                     style="background-image: url('bilder/påske1.webp')">
-                    <h1>Påske</h1>
+                    <a href="#paaske">
+                        <h1>Påske</h1>
+                    </a>
                 </div>
                 <div class="hoytid"
                     style="background-image: url('bilder/17.mai1')">
-                    <h1>17.mai</h1>
+                    <a href="#17mai">
+                        <h1>17.mai</h1>
+                    </a>
                 </div>
                 <div class="hoytid"
                     style="background-image: url('bilder/sommer1')">
@@ -140,18 +153,18 @@
                     style="background-image: url('bilder/julemat1.avif')">
                     <h1>Julaften</h1>
                 </div>
-                <div class="hoytid"
+                <div class="hoytid" id="paaske"
                     style="background-image: url('bilder/nyttårs1.avif')">
                     <h1>Nyttårsaften</h1>
                 </div>
             </section>
 
-            <article class="paske">
+            <article style="background-color: #FFF1A3;">
                 <h1>Påske</h1>
                 <p>Påsken er en tid for mye kos med god mat! Her finner du
                     oppskrifter og inspirasjon
                     til hva du kan servere gjestene under høytiden.</p>
-                <div class="hoytid_img">
+                <div class="hoytid_img" id="17mai">
                     <img src="bilder/påske1.avif" alt>
                     <img src="bilder/påske2.avif" alt>
                     <img src="bilder/påske3.avif" alt>
@@ -159,10 +172,12 @@
 
             </article>
 
-            <article>
+            <article  style="background-color: #87D0FD;">
                 <h1>17. mai</h1>
-                <p>Uansett om du skal bidra med en rett til frokosten eller om du inviterer til middag – 
-                    her finner du inspirasjon og de mest populære oppskriftene til 17.mai.</p>
+                <p>Uansett om du skal bidra med en rett til frokosten eller om
+                    du inviterer til middag –
+                    her finner du inspirasjon og de mest populære oppskriftene
+                    til 17.mai.</p>
                 <div class="hoytid_img">
                     <img src="bilder/17.mai1" alt>
                     <img src="bilder/17.mai2" alt>
@@ -170,10 +185,11 @@
                 </div>
             </article>
 
-            <article>
+            <article style="background-color: #B5FFB2;">
                 <h1>Sommerfest</h1>
-                <p>Koser du deg med maten i sommer? Det har du all grunn til, bare se på all denne deilige 
-                sommermaten.</p>
+                <p>Koser du deg med maten i sommer? Det har du all grunn til,
+                    bare se på all denne deilige
+                    sommermaten.</p>
                 <div class="hoytid_img">
                     <img src="bilder/sommer1" alt>
                     <img src="bilder/sommer2.avif" alt>
@@ -181,10 +197,12 @@
                 </div>
 
             </article>
-            <article>
+            <article style="background-color: #F3B071;">
                 <h1>Halloween</h1>
-                <p>Halloween, eller allehelgensaften som det også kalles på norsk, feires over hele verden
-                og gjerne med mat og godterier. Her finner du oppskrifter til halloween</p>
+                <p>Halloween, eller allehelgensaften som det også kalles på
+                    norsk, feires over hele verden
+                    og gjerne med mat og godterier. Her finner du oppskrifter
+                    til halloween</p>
                 <div class="hoytid_img">
                     <img src="bilder/halloween1.jpg" alt>
                     <img src="bilder/halloween2.webp" alt>
@@ -192,20 +210,23 @@
                 </div>
             </article>
 
-            <article>
+            <article style="background-color: #E0B1E6;">
                 <h1>Juletider</h1>
-                <p>Fyll huset med den stemningsfulle duften av julemat. Vi har samlet oppskrifter og 
-                inspirasjon som setter julestemningen og fikser julekosen.</p>
+                <p>Fyll huset med den stemningsfulle duften av julemat. Vi har
+                    samlet oppskrifter og
+                    inspirasjon som setter julestemningen og fikser
+                    julekosen.</p>
                 <div class="hoytid_img">
                     <img src="bilder/julemat1.avif" alt>
                     <img src="bilder/julemat2.avif" alt>
                     <img src="bilder/julemat3.avif" alt>
                 </div>
             </article>
-            <article>
+            <article style="background-color: #F7E6CA;">
                 <h1>Nyttårsaften</h1>
-                <p>Ser du etter oppskrifter på nyttårsmat? Her har vi samlet alt fra kalkun, pinnekjøtt 
-                og and, til karamellpudding og riskremkake.</p>
+                <p>Ser du etter oppskrifter på nyttårsmat? Her har vi samlet alt
+                    fra kalkun, pinnekjøtt
+                    og and, til karamellpudding og riskremkake.</p>
                 <div class="hoytid_img">
                     <img src="bilder/nyttårs1.avif" alt>
                     <img src="bilder/nyttårs2.avif" alt>
