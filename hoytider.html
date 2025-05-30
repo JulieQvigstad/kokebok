@@ -36,13 +36,13 @@
 
         .hoytid > h1 {
             margin: auto;
-            background-color: gray;
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
             color: white;
         }
 
         article{
-            height: 300px;
+            min-height: 300px;
             border: 2px solid black;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -68,6 +68,10 @@
                 grid-template-columns: repeat(2, 250px);
             }
 
+            article > p{
+                padding: 20px;
+            }
+
         }
 
         @media (max-width: 530px){
@@ -77,6 +81,8 @@
 
             .hoytid_img{
                 flex-direction: column;
+                height: auto;
+                width: 200px;
             }
         }
 
@@ -153,19 +159,58 @@
 
             </article>
 
-            <article class="paske">
+            <article>
+                <h1>17. mai</h1>
+                <p>Uansett om du skal bidra med en rett til frokosten eller om du inviterer til middag – 
+                    her finner du inspirasjon og de mest populære oppskriftene til 17.mai.</p>
+                <div class="hoytid_img">
+                    <img src="bilder/17.mai1" alt>
+                    <img src="bilder/17.mai2" alt>
+                    <img src="bilder/17.mai3" alt>
+                </div>
+            </article>
+
+            <article>
+                <h1>Sommerfest</h1>
+                <p>Koser du deg med maten i sommer? Det har du all grunn til, bare se på all denne deilige 
+                sommermaten.</p>
+                <div class="hoytid_img">
+                    <img src="bilder/sommer1" alt>
+                    <img src="bilder/sommer2.avif" alt>
+                    <img src="bilder/sommer3.webp" alt>
+                </div>
 
             </article>
-            <article class="paske">
-
+            <article>
+                <h1>Halloween</h1>
+                <p>Halloween, eller allehelgensaften som det også kalles på norsk, feires over hele verden
+                og gjerne med mat og godterier. Her finner du oppskrifter til halloween</p>
+                <div class="hoytid_img">
+                    <img src="bilder/halloween1.jpg" alt>
+                    <img src="bilder/halloween2.webp" alt>
+                    <img src="bilder/halloween3.jpg" alt>
+                </div>
             </article>
-            <article class="paske">
 
+            <article>
+                <h1>Juletider</h1>
+                <p>Fyll huset med den stemningsfulle duften av julemat. Vi har samlet oppskrifter og 
+                inspirasjon som setter julestemningen og fikser julekosen.</p>
+                <div class="hoytid_img">
+                    <img src="bilder/julemat1.avif" alt>
+                    <img src="bilder/julemat2.avif" alt>
+                    <img src="bilder/julemat3.avif" alt>
+                </div>
             </article>
-            <article class="paske">
-
-            </article>
-            <article class="paske">
+            <article>
+                <h1>Nyttårsaften</h1>
+                <p>Ser du etter oppskrifter på nyttårsmat? Her har vi samlet alt fra kalkun, pinnekjøtt 
+                og and, til karamellpudding og riskremkake.</p>
+                <div class="hoytid_img">
+                    <img src="bilder/nyttårs1.avif" alt>
+                    <img src="bilder/nyttårs2.avif" alt>
+                    <img src="bilder/nyttårs3.avif" alt>
+                </div>
 
             </article>
         </main>
