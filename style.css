@@ -21,8 +21,13 @@ a {
     color: black;
 }
 
-/*Header og navbar*/
+h1 {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 27px;
+}
 
+/*Header og navbar*/
 header {
     display: flex;
     width: 100%;
@@ -60,15 +65,8 @@ nav {
     padding-left: 15px;
     width: fit-content;
 }
-
 /*Header og navbar - SLUTT*/
 
-
-h1 {
-    text-align: center;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 27px;
-}
 
 /*Populære kategorier*/
 .poppis {
@@ -97,7 +95,7 @@ h1 {
     filter: grayscale(100%);
     transition: 1s;
 }
-/*Populære kategorier slut*/
+/*Populære kategorier slutt*/
 
 .login {
     display: flex;
@@ -108,7 +106,6 @@ h1 {
 }
 
 /*Tilfeldig middag*/
-
 .rulett {
     background-color: bisque;
     height: 500px;
@@ -163,6 +160,7 @@ h1 {
 }
 /*Tilfeldig middag - SLUTT*/
 
+/*Footer*/
 footer {
     text-align: center;
     margin: auto;
@@ -197,6 +195,7 @@ footer>h1 {
     width: 327px;
     border-radius: 29px;
 }
+/*Footer - SLUTT*/
 
 /*Start forside*/
 .start {
@@ -241,22 +240,6 @@ footer>h1 {
 .bottomRight img {
     border-radius: 0 0 20px 0;
 }
-
-/*
-.info {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    min-height: 80px;
-    height: 10%;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    padding: 20px;
-   color: pink;
-    align-items: center;
-    transition: height 0.3s ease, background-color 0.3s ease;
-}*/
 /*Start forside - SLUTT*/
 
 @media (max-width: 1180px) {
