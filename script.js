@@ -1,8 +1,8 @@
 const knapp = document.getElementById("knapp");
 const bildeboks = document.getElementById("tilf_bilder");
-const recipe = document.querySelector(".recipe")
-const pil = document.querySelector(".toggle-knapp")
-const liktElms = document.querySelectorAll(".fa-heart")
+const recipe = document.querySelector(".recipe");
+const pil = document.querySelector(".toggle-knapp");
+const liktElms = document.querySelectorAll(".fa-heart");
 
 const bilder = [
   "bilder/middag1.jpg",
@@ -23,7 +23,6 @@ function visBilde() {
 knapp.addEventListener("click", visBilde);
 
 //Oppskrift
-
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".toggle-knapp");
 
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//LIKTE OPPSKRIFTER 
+//LIKTE OPPSKRIFTER - start
 //Ved lasting av siden: sett mørk rosa hvis den er likt fra før
 const savedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 
@@ -53,6 +52,7 @@ liktElms.forEach(heart => {
   heart.addEventListener("click", function () {
     heart.classList.toggle("nyfarge");
 
+
     let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 
     if (heart.classList.contains('nyfarge')) {
@@ -68,3 +68,4 @@ liktElms.forEach(heart => {
     localStorage.setItem('likedRecipes', JSON.stringify(likedRecipes));
   });
 });
+//Likte oppskrofter - slutt
