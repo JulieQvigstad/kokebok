@@ -44,7 +44,9 @@ const savedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 liktElms.forEach(heart => {
   const article = heart.closest('article');
   const title = article.dataset.title;
-  const imgSrc = article.dataset.img;
+  
+  const img = article.querySelector('img');
+  const imgSrc = img ? img.src : "";
 
   //Hvis oppskriften finnes i localStorage legg til nyfarge-klassen
   if (savedRecipes.find(recipe => recipe.title === title)) {
