@@ -65,7 +65,6 @@ nav {
     padding-left: 15px;
     width: fit-content;
 }
-
 /*Header og navbar - SLUTT*/
 
 
@@ -96,7 +95,6 @@ nav {
     filter: grayscale(100%);
     transition: 1s;
 }
-
 /*Populære kategorier slutt*/
 
 .login {
@@ -160,7 +158,6 @@ nav {
     transition: 1s;
     color: white;
 }
-
 /*Tilfeldig middag - SLUTT*/
 
 /*Footer*/
@@ -198,7 +195,6 @@ footer>h1 {
     width: 327px;
     border-radius: 29px;
 }
-
 /*Footer - SLUTT*/
 
 /*Start forside*/
@@ -206,6 +202,7 @@ footer>h1 {
     display: flex;
     min-height: 100vh;
     padding: 1px;
+    gap: 0;
 
 }
 
@@ -244,7 +241,6 @@ footer>h1 {
 .bottomRight img {
     border-radius: 0 0 20px 0;
 }
-
 /*Start forside - SLUTT*/
 
 /*Høytider - side */
@@ -280,7 +276,7 @@ footer>h1 {
     color: white;
 }
 
-article {
+.celebrate article {
     min-height: 300px;
     padding: 20px;
     display: flex;
