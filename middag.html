@@ -34,6 +34,10 @@
         opacity: 0.6;
     }
 
+    /* Forsøk på å fjerne "controls" på IOS */
+    video::-webkit-media-controls-start-playback-button {
+        display: none;
+    }
 
     main {
         display: flex;
@@ -110,7 +114,6 @@
 
     .weekend {
         background-color: rgb(246, 237, 251);
-        
     }
 
     .helg {
@@ -144,7 +147,7 @@
     .kolonne {
         display: flex;
         flex-direction: column;
-        background-color:rgb(249, 203, 249) ;
+        background-color: rgb(249, 203, 249);
         border-radius: 15px;
     }
 
@@ -233,6 +236,7 @@
         content: "▲";
         transform: rotate(180deg);
     }
+
     /*likte oppskrifter slutt*/
 
     @media(max-width: 1190px) {
@@ -253,7 +257,7 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         .children {
             padding: 20px;
         }
