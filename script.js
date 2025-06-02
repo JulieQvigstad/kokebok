@@ -21,22 +21,23 @@ function visBilde() {
   bildeboks.innerHTML = `<img src="${valgtBilde}" alt="Middagsbilde">`;
 }
 
-knapp.addEventListener("click", visBilde);
+
+if (knapp) {
+  knapp.addEventListener("click", visBilde);
+}
 
 //Oppskrift
+const buttons = document.querySelectorAll(".toggle-knapp");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".toggle-knapp");
-
-  buttons.forEach(button => {
-    button.addEventListener("click", function () {
-      const recipeBox = this.closest(".recipe");
-      recipeBox.classList.toggle("utvid");
-    });
+buttons.forEach(button => {
+  button.addEventListener("click", function () {
+    const recipeBox = this.closest(".recipe");
+    recipeBox.classList.toggle("utvid");
   });
 });
 
-//LIKTE OPPSKRIFTER 
+
+//LIKTE OPPSKRIFTER - start
 //Ved lasting av siden: sett mørk rosa hvis den er likt fra før
 const savedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 
@@ -54,6 +55,7 @@ liktElms.forEach(heart => {
   heart.addEventListener("click", function () {
     heart.classList.toggle("nyfarge");
 
+
     let likedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 
     if (heart.classList.contains('nyfarge')) {
@@ -69,3 +71,4 @@ liktElms.forEach(heart => {
     localStorage.setItem('likedRecipes', JSON.stringify(likedRecipes));
   });
 });
+//Likte oppskrofter - slutt
