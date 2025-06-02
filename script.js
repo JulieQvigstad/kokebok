@@ -1,5 +1,6 @@
 const knapp = document.getElementById("knapp");
 const bildeboks = document.getElementById("tilf_bilder");
+
 const recipe = document.querySelector(".recipe")
 const pil = document.querySelector(".toggle-knapp")
 const liktElms = document.querySelectorAll(".fa-heart")

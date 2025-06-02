@@ -346,6 +346,17 @@ article>p {
     }*/
 }
 
+@media (max-width: 980px) {
+    .hoy_grid {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    article>p {
+        padding: 20px;
+    }
+
+}
+
 @media (max-width: 700px) {
     .login {
         display: none;
@@ -389,18 +400,6 @@ article>p {
         justify-content: space-around;
         gap: 20px;
     }
-}
-
-
-@media (max-width: 980px) {
-    .hoy_grid {
-        grid-template-columns: repeat(2, 250px);
-    }
-
-    article>p {
-        padding: 20px;
-    }
-
 }
 
 @media (max-width: 630px) {
