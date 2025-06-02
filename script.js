@@ -4,24 +4,23 @@ const recipe = document.querySelector(".recipe")
 const pil = document.querySelector(".toggle-knapp")
 const liktElms = document.querySelectorAll(".fa-heart")
 
-
 const bilder = [
-  "bilder/frokost.jpg",
-  "bilder/lunsj.avif",
-  "bilder/middag.jpeg",
-  "bilder/dessert.jpg"
+  "bilder/middag1.jpg",
+  "bilder/middag2.jpg",
+  "bilder/middag3.webp",
+  "bilder/middag4.jpeg"
 ];
 
 function visBilde() {
   const antallBilder = bilder.length;
-  const tilfeldigTall = Math.random();
-  const tilfeldigIndex = Math.floor(tilfeldigTall * antallBilder);
+  const tilfeldigIndex = Math.floor(Math.random() * antallBilder);
   const valgtBilde = bilder[tilfeldigIndex];
 
-  // Funker ikke? bildeboks.innerHTML = '<img src="' + valgtBilde + '" alt="Middagsforslag">';
+
+  bildeboks.innerHTML = `<img src="${valgtBilde}" alt="Middagsbilde">`;
 }
 
-document.addEventListener("click", visBilde);
+knapp.addEventListener("click", visBilde);
 
 //Oppskrift
 
