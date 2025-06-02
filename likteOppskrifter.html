@@ -22,7 +22,9 @@
 
     #likte-oppskrifter {
         display: flex;
-        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         overflow-x: auto;
         gap: 20px;
         padding: 20px;
@@ -90,7 +92,7 @@
 
         likedRecipes.forEach(recipe => {
             if (!recipe.title || !recipe.imgSrc) return;
-            
+
             const div = document.createElement('div');
             div.className = 'liked-recipe';
             div.innerHTML = `
