@@ -74,3 +74,32 @@ liktElms.forEach(heart => {
   });
 });
 //Likte oppskrofter - slutt
+
+
+const søkefelt = document.getElementById("search-bar")
+
+søkefelt.addEventListener("keydown", function (tastetrykk) {
+    if (tastetrykk.key === "Enter") {
+        const søkeord = søkefelt.value;
+        console.log("Du skrev", søkeord)
+
+        fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + søkeord)
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.meals && data.meals.length > 0) {
+            // Henter første resultat:
+            const oppskrift = data.meals[0]
+            // Logger hele (så vi kan se hva som finnes av muligheter):
+            console.log(oppskrift)
+            // Logger litt mer:
+            console.log("Vi skal lage", oppskrift.strMeal)
+            console.log("Bilde:", oppskrift.strMealThumb)
+          } else {
+            console.log("Fikk ingen resultat")
+            console.log(data)
+            // Nullstill søkefelt:
+            søkefelt.value = ""
+          }
+        })
+    }
+});
