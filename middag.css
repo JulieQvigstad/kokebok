@@ -231,7 +231,6 @@ article h4 {
     content: "▲";
     transform: rotate(180deg);
 }
-
 /*likte oppskrifter slutt*/
 
 @media(max-width: 1190px) {
