@@ -97,6 +97,7 @@ nav {
 }
 /*Populære kategorier slutt*/
 
+/*Logg inn siden - start*/
 .login {
     display: flex;
     align-items: center;
@@ -104,6 +105,8 @@ nav {
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
+/*Logg inn siden - slutt*/
+
 
 /*Tilfeldig middag*/
 .rulett {
