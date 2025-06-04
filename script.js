@@ -81,6 +81,8 @@ const søkefelt = document.getElementById("search-bar")
 søkefelt.addEventListener("keydown", function (tastetrykk) {
     if (tastetrykk.key === "Enter") {
         const søkeord = søkefelt.value;
+        resultatBoks.innerHTML = "Laster oppskrifter";
+
         console.log("Du skrev", søkeord)
 
         fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + søkeord)
@@ -89,6 +91,18 @@ søkefelt.addEventListener("keydown", function (tastetrykk) {
           if (data.meals && data.meals.length > 0) {
             // Henter første resultat:
             const oppskrift = data.meals[0]
+
+            resultatBoks.innerHTML = `
+              <h2>${oppskrift.strMeal}</h2>
+              <img src="${oppskrift.strMealThumb}" style="max-width: 300px; border-radius: 12px;">
+              <p><strong>Instruksjoner:</strong> ${oppskrift.strInstructions}</p>
+            `;
+
+
+
+
+
+
             // Logger hele (så vi kan se hva som finnes av muligheter):
             console.log(oppskrift)
             // Logger litt mer:
