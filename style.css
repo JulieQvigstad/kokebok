@@ -440,10 +440,6 @@ article>p {
         gap: 10px;
     }
 
-    .user .right {
-        display: none;
-    }
-
     header img {
         width: auto;
         margin-left: 50%;
@@ -452,15 +448,6 @@ article>p {
     .user .login {
         display: none;
     }
-
-    .user .navitem {
-        display: none;
-    }
-
-    .user nav.right {
-        display: none;
-    }
-
 }
 
 @media (max-width: 700px) {
