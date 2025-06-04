@@ -364,6 +364,17 @@ article>p {
     width: 30%;
 }
 
+#resultat{
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 81px;
+    width: 40%;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
 @media (max-width: 1180px) {
     .start {
         flex-direction: column;

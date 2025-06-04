@@ -44,7 +44,7 @@ const savedRecipes = JSON.parse(localStorage.getItem('likedRecipes')) || [];
 liktElms.forEach(heart => {
   const article = heart.closest('article');
   const title = article.dataset.title;
-  
+
   const img = article.querySelector('img');
   const imgSrc = img ? img.src : "";
 
@@ -76,44 +76,39 @@ liktElms.forEach(heart => {
 //Likte oppskrofter - slutt
 
 
-const søkefelt = document.getElementById("search-bar")
+const søkefelt = document.getElementById("search-bar");
+const resultatBoks = document.getElementById("resultat");
 
 søkefelt.addEventListener("keydown", function (tastetrykk) {
-    if (tastetrykk.key === "Enter") {
-        const søkeord = søkefelt.value;
-        resultatBoks.innerHTML = "Laster oppskrifter";
+  if (tastetrykk.key === "Enter") {
 
-        console.log("Du skrev", søkeord)
+    resultatBoks.style.display = "block"
+    resultatBoks.innerHTML = "Laster oppskrifter...";
 
-        fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + søkeord)
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.meals && data.meals.length > 0) {
-            // Henter første resultat:
-            const oppskrift = data.meals[0]
+    setTimeout(lastInnOppskrifter, 400)
 
-            resultatBoks.innerHTML = `
-              <h2>${oppskrift.strMeal}</h2>
-              <img src="${oppskrift.strMealThumb}" style="max-width: 300px; border-radius: 12px;">
-              <p><strong>Instruksjoner:</strong> ${oppskrift.strInstructions}</p>
-            `;
-
-
-
-
-
-
-            // Logger hele (så vi kan se hva som finnes av muligheter):
-            console.log(oppskrift)
-            // Logger litt mer:
-            console.log("Vi skal lage", oppskrift.strMeal)
-            console.log("Bilde:", oppskrift.strMealThumb)
-          } else {
-            console.log("Fikk ingen resultat")
-            console.log(data)
-            // Nullstill søkefelt:
-            søkefelt.value = ""
-          }
-        })
-    }
+  }
 });
+
+function lastInnOppskrifter() {
+  fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + søkefelt.value)
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.meals && data.meals.length > 0) {
+        const oppskrift = data.meals[0];
+
+        console.log(oppskrift);
+        console.log("Vi skal lage", oppskrift.strMeal);
+        console.log("Bilde:", oppskrift.strMealThumb);
+
+        resultatBoks.innerHTML = `
+                        <h2>${oppskrift.strMeal}</h2>
+                        <img src="${oppskrift.strMealThumb}" style="max-width: 300px; border-radius: 12px;">
+                        <p><strong>Instruksjoner:</strong> ${oppskrift.strInstructions}</p>
+                    `;
+      } else {
+        resultatBoks.innerHTML = `Fant ingen oppskrifter for "<strong>${søkefelt.value}</strong>"`;
+        søkefelt.value = "";
+      }
+    });
+}
