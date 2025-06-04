@@ -105,6 +105,65 @@ nav {
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
+
+.user main {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.user {
+    font-family: "Raleway", sans-serif;
+    color: var(--morkgronn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user h2 {
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.user article {
+    width: 700px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid lightpink;
+}
+
+.user button {
+    background-color: lightpink;
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.user button:hover {
+    background-color: pink;
+}
+
+.user input {
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+
 /*Logg inn siden - slutt*/
 
 
@@ -349,6 +408,57 @@ article>p {
 
     article>p {
         padding: 20px;
+    }
+}
+
+@media(max-width: 750px) {
+    .user article {
+        padding: 20px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .user h1 {
+        font-size: 2rem;
+    }
+
+    .user h2 {
+        font-size: 1.5rem;
+    }
+
+    .user button {
+        width: 100%;
+    }
+
+    .user input {
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user .right {
+        display: none;
+    }
+
+    header img {
+        width: auto;
+        margin-left: 50%;
+    }
+
+    .user .login {
+        display: none;
+    }
+
+    .user .navitem {
+        display: none;
+    }
+
+    .user nav.right {
+        display: none;
     }
 
 }
