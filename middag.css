@@ -1,4 +1,4 @@
-.middag {
+.middag, .dessert {
     position: relative;
     right: 0;
     width: 100%;
@@ -12,7 +12,7 @@
 }
 
 
-.middag video {
+.middag video, .dessert video {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,6 +26,11 @@
 /* Forsøk på å fjerne "controls" på IOS */
 video::-webkit-media-controls {
     display: none;
+}
+
+.dessert h1 {
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
 }
 
 main {
