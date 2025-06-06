@@ -171,8 +171,6 @@ form div {
     flex-direction: column;
     margin-bottom: 30px;
 }
-
-
 /*Logg inn siden - slutt*/
 
 
@@ -383,6 +381,48 @@ article>p {
     color: white;
     padding: 20px;
 }
+
+/*dine favoritter*/
+.favoritt section {
+    margin-top: 40px;
+}
+
+.favoritt h1 {
+    font-size: 50px;
+    background: linear-gradient(to right, red, hotpink, purple);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#likte-oppskrifter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.liked-recipe {
+    flex: 0 0 auto;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.liked-recipe h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.liked-recipe img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
 
 @media (max-width: 1180px) {
     .start {
