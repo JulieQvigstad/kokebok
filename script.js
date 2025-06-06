@@ -79,17 +79,19 @@ liktElms.forEach(heart => {
 const søkefelt = document.getElementById("search-bar");
 const resultatBoks = document.getElementById("resultat");
 
-søkefelt.addEventListener("keydown", function (tastetrykk) {
-  if (tastetrykk.key === "Enter") {
-
-    resultatBoks.style.display = "block"
-    resultatBoks.innerHTML = "Laster oppskrifter...";
-
-    setTimeout(lastInnOppskrifter, 400)
-
-  }
-});
-
+if (søkefelt && resultatBoks) {
+  søkefelt.addEventListener("keydown", function (tastetrykk) {
+    if (tastetrykk.key === "Enter") {
+      
+      resultatBoks.style.display = "block"
+      resultatBoks.innerHTML = "Laster oppskrifter...";
+      
+      setTimeout(lastInnOppskrifter, 400)
+      
+    }
+  });
+}
+  
 function lastInnOppskrifter() {
   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + søkefelt.value)
     .then((response) => response.json())
