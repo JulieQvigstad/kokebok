@@ -50,6 +50,15 @@ header {
     width: 100%;
 }
 
+.container nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(252, 234, 204);
+    padding: 15px;
+    width: 100%;
+}
+
 #header-slutt {
     display: flex;
     align-items: center;
@@ -373,15 +382,6 @@ article>p {
     background: black;
     color: white;
     padding: 20px;
-}
-
-.container nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(252, 234, 204);
-    padding: 15px;
-    width: 100%;
 }
 
 @media (max-width: 1180px) {
