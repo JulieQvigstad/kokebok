@@ -114,3 +114,14 @@ function lastInnOppskrifter() {
       }
     });
 }
+
+const lukkResultat = document.getElementById("lukk_resultat");
+
+resultatBoks.style.display = "block";
+
+if (lukkResultat) {
+  lukkResultat.addEventListener("click", () => {
+    resultatBoks.style.display = "none";
+    resultatBoks.innerHTML = '<i id="lukk-resultat" class="fa-solid fa-xmark"></i>';
+  });
+}
