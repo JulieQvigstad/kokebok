@@ -76,6 +76,7 @@ liktElms.forEach(heart => {
 //Likte oppskrofter - slutt
 
 
+//Søkefelt
 const søkefelt = document.getElementById("search-bar");
 const resultatBoks = document.getElementById("resultat");
 
@@ -104,10 +105,14 @@ function lastInnOppskrifter() {
         console.log("Bilde:", oppskrift.strMealThumb);
 
         resultatBoks.innerHTML = `
+                        <span id="lukk-resultat">&times;</span>
                         <h2>${oppskrift.strMeal}</h2>
                         <img src="${oppskrift.strMealThumb}" style="max-width: 300px; border-radius: 12px;">
                         <p><strong>Instruksjoner:</strong> ${oppskrift.strInstructions}</p>
                     `;
+                    document.getElementById("lukk-resultat").addEventListener("click", () => {
+                      resultatBoks.style.display = "none";
+                    });
       } else {
         resultatBoks.innerHTML = `Fant ingen oppskrifter for "<strong>${søkefelt.value}</strong>"`;
         søkefelt.value = "";
